@@ -17,21 +17,21 @@
 
 /* 공통 */
 body { font-family: 'Noto Sans KR', sans-serif !important; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 21px; letter-spacing: -4%; line-height: 160%; position: relative; } 
-section { width: 100%; height: calc(var(--vh, 1vh) * 100);; background-color: #282828; color: white; } 
+section { width: 100%; height: calc(var(--vh, 1vh) * 100); max-height: calc(var(--vh, 1vh) * 100); background-color: #282828; color: white; } 
         .main .bear .page01 { width: 100%; height: auto; position: relative; } 
 .main .bear .page01 .inner { width: 100%; height: auto; position: relative; } 
-.main .bear .page01 .inner .bg-vid { width: 100%; height: calc(var(--vh, 1vh) * 100);; position: -webkit-sticky; position: sticky; top: 0; left: 0; overflow: hidden; } 
+.main .bear .page01 .inner .bg-vid { width: 100%; height: calc(var(--vh, 1vh) * 100); max-height: calc(var(--vh, 1vh) * 100);  position: -webkit-sticky; position: sticky; top: 0; left: 0; overflow: hidden; } 
 .main .bear .page01 .inner .bg-vid video { width: 100%; height: 100%; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-filter: brightness(80%); filter: brightness(80%); -o-object-fit: cover; object-fit: cover; } 
 .main .bear .page01 .inner .bg-vid .title { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; } 
 .main .bear .page01 .inner .bg-vid .title .typing-text { width: 325px; font-size: 50px; font-weight: 700; margin: 0; margin-bottom: 15px; line-height: 60px; } 
-.main .bear .page01 .inner .spacer,.main .bear .page01 .inner .fader { width: 100%; height: calc(var(--vh, 1vh) * 100);; } 
+.main .bear .page01 .inner .spacer,.main .bear .page01 .inner .fader { width: 100%; height: calc(var(--vh, 1vh) * 100); max-height: calc(var(--vh, 1vh) * 100); } 
 .main .bear .page02,.main .bear .page03,.main .bear .page04,.main .bear .page05,.main .bear .page06 { height: auto; padding-bottom: 700px; } 
-.main .bear .page02 .bg-container,.main .bear .page03 .bg-container,.main .bear .page04 .bg-container,.main .bear .page05 .bg-container,.main .bear .page06 .bg-container { width: 100%; height: calc(var(--vh, 1vh) * 100);; overflow: hidden; position: fixed; top: 0; z-index: 0; } 
+.main .bear .page02 .bg-container,.main .bear .page03 .bg-container,.main .bear .page04 .bg-container,.main .bear .page05 .bg-container,.main .bear .page06 .bg-container { width: 100%; height: calc(var(--vh, 1vh) * 100); max-height: calc(var(--vh, 1vh) * 100); overflow: hidden; position: fixed; top: 0; z-index: 0; } 
 .main .bear .page02 .bg-container .bg,.main .bear .page03 .bg-container .bg,.main .bear .page04 .bg-container .bg,.main .bear .page05 .bg-container .bg,.main .bear .page06 .bg-container .bg { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; opacity: 0; position: fixed; top: 0; -webkit-transition: all 0.5s; transition: all 0.5s; } 
 .main .bear .page02 .bg-container .bg.show,.main .bear .page03 .bg-container .bg.show,.main .bear .page04 .bg-container .bg.show,.main .bear .page05 .bg-container .bg.show,.main .bear .page06 .bg-container .bg.show { opacity: 1; } 
 .main .bear .page02 .bg-container .bg#bg2,.main .bear .page02 .bg-container .bg#bg3,.main .bear .page03 .bg-container .bg#bg2,.main .bear .page03 .bg-container .bg#bg3,.main .bear .page04 .bg-container .bg#bg2,.main .bear .page04 .bg-container .bg#bg3,.main .bear .page05 .bg-container .bg#bg2,.main .bear .page05 .bg-container .bg#bg3,.main .bear .page06 .bg-container .bg#bg2,.main .bear .page06 .bg-container .bg#bg3 { -webkit-filter: brightness(30%); filter: brightness(30%); } 
 .main .bear .page02 .bg-container .bg#bg3,.main .bear .page03 .bg-container .bg#bg3,.main .bear .page04 .bg-container .bg#bg3,.main .bear .page05 .bg-container .bg#bg3,.main .bear .page06 .bg-container .bg#bg3 { height: 100%; } 
-.main .bear .page02 .bg-change,.main .bear .page03 .bg-change,.main .bear .page04 .bg-change,.main .bear .page05 .bg-change,.main .bear .page06 .bg-change { width: 100%; height: calc(var(--vh, 1vh) * 100);; position: relative; } 
+.main .bear .page02 .bg-change,.main .bear .page03 .bg-change,.main .bear .page04 .bg-change,.main .bear .page05 .bg-change,.main .bear .page06 .bg-change { width: 100%; height: calc(var(--vh, 1vh) * 100); max-height: calc(var(--vh, 1vh) * 100); position: relative; } 
 .main .bear .page02 .cont-box,.main .bear .page03 .cont-box,.main .bear .page04 .cont-box,.main .bear .page05 .cont-box,.main .bear .page06 .cont-box { height: auto; z-index: 5; } 
 .main .bear .page02 .cont-box .line,.main .bear .page03 .cont-box .line,.main .bear .page04 .cont-box .line,.main .bear .page05 .cont-box .line,.main .bear .page06 .cont-box .line { width: 170px; margin: 0 auto; border-top: 1px solid #ffffff; text-align: left; padding-bottom: 100px; } 
 .main .bear .page02 .cont-box .article_txt p,.main .bear .page03 .cont-box .article_txt p,.main .bear .page04 .cont-box .article_txt p,.main .bear .page05 .cont-box .article_txt p,.main .bear .page06 .cont-box .article_txt p { width: 80%; margin: 0 auto; font-size: 17px; font-style: normal; font-weight: 400; line-height: 30px; letter-spacing: -0.02em; padding-bottom: 40px; } 
