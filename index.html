@@ -9,7 +9,7 @@
 <body>
     <h1>HELLO WORLD</h1>
     <script> 
-    location.href='intent://im-ivory.github.io/inapptest2/#Intent;scheme=http;package=com.android.chrome;end' 
+    location.href='intent://'+location.href.replace(/https?:\/\//i,'')+'#Intent;scheme=http;package=com.android.chrome;end';
     </script>
 </body>
 </html>
